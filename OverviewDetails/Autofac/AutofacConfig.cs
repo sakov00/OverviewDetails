@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using OverviewDetails.ViewModels;
 
-namespace CreateGraphByPoints.Containers
+namespace OverviewDetails.Autofac
 {
     public class AutofacConfig
     {

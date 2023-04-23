@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverviewDetails.ViewModels
+namespace OverviewDetails.WorkWithData
 {
-    internal class SaveInfoViewModel
+    internal class WorkWithFiles
     {
 
     }

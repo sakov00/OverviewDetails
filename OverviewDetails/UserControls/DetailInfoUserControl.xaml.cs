@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace OverviewDetails.Views
+namespace OverviewDetails.UserControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for DetailInfoUserControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DetailInfoUserControl : UserControl
     {
-        public MainWindow()
+        public DetailInfoUserControl()
         {
             InitializeComponent();
         }

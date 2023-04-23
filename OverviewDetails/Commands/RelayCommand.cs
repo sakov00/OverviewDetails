@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace CreateGraphByPoints.Commands
+namespace OverviewDetails.Commands
 {
     public class RelayCommand : ICommand
     {
