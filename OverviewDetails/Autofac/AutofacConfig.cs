@@ -15,11 +15,12 @@ namespace OverviewDetails.Autofac
             //builder.RegisterType<InteractionOnCanvasViewModel>();
             //builder.RegisterType<WorkWithJson>();
             //builder.RegisterType<WorkWithXml>();
-            //builder.Register(x => new MainViewModel
-            //(
-            //    x.Resolve<InteractionOnCanvasViewModel>(),
-            //    x.Resolve<InteractionWithFilesViewModel>())
-            //);
+            builder.Register(x => new MainViewModel
+            (
+                x.Resolve<MenuViewModel>(),
+                x.Resolve<DetailViewModel>(),
+                x.Resolve<WindowForDetailViewModel>()
+            ));
 
             GetContainer = builder.Build();
         }

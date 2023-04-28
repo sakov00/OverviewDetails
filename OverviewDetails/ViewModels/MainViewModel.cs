@@ -4,34 +4,47 @@ namespace OverviewDetails.ViewModels
 {
     internal class MainViewModel : BaseViewModel
     {
-        //private InteractionOnCanvasViewModel interactionOnCanvasVM;
+        private MenuViewModel menuVM;
 
-        //private InteractionWithFilesViewModel interactionWithFilesVM;
+        private DetailViewModel detailVM;
 
-        //public InteractionWithFilesViewModel InteractionWithFilesVM
-        //{
-        //    get => interactionWithFilesVM;
-        //    set
-        //    {
-        //        interactionWithFilesVM = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
+        private WindowForDetailViewModel windowForDetailVM;
 
-        //public InteractionOnCanvasViewModel InteractionOnCanvasVM
-        //{
-        //    get => interactionOnCanvasVM;
-        //    set
-        //    {
-        //        interactionOnCanvasVM = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
+        public MenuViewModel MenuVM
+        {
+            get => menuVM;
+            set
+            {
+                menuVM = value;
+                OnPropertyChanged();
+            }
+        }
 
-        //public MainViewModel(InteractionOnCanvasViewModel paramInteractionOnCanvasVM, InteractionWithFilesViewModel paramInteractionWithFilesVM)
-        //{
-        //    interactionOnCanvasVM = paramInteractionOnCanvasVM;
-        //    interactionWithFilesVM = paramInteractionWithFilesVM;
-        //}
+        public DetailViewModel DetailVM
+        {
+            get => detailVM;
+            set
+            {
+                detailVM = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public WindowForDetailViewModel WindowForDetailVM
+        {
+            get => windowForDetailVM;
+            set
+            {
+                windowForDetailVM = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public MainViewModel(MenuViewModel menuVM, DetailViewModel detailVM, WindowForDetailViewModel windowForDetailVM)
+        {
+            this.menuVM = menuVM;
+            this.detailVM = detailVM;
+            this.windowForDetailVM = windowForDetailVM;
+        }
     }
 }

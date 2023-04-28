@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace OverviewDetails.UserControls
 {
     /// <summary>
-    /// Interaction logic for DetailInfoUserControl.xaml
+    /// Interaction logic for MenuUserControl.xaml
     /// </summary>
-    public partial class DetailInfoUserControl : UserControl
+    public partial class MenuUserControl : UserControl
     {
-        public DetailInfoUserControl()
+        public MenuUserControl()
         {
             InitializeComponent();
         }
